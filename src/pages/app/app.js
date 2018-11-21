@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../../assets/logo.svg';
+import { connect } from 'react-redux'
+import './style.css';
+import f from './function.js'
 
 class App extends Component {
   render() {
@@ -25,4 +27,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(f.mapStateToProps.bind(this), f.mapDispatchToProps.bind(this))(App);
