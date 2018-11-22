@@ -1,8 +1,9 @@
+import _ from 'lodash'
 
 export default {
 
   /**********************LifeCycle Components in Order **********************************/
-
+  
 
   /***********************Additonal Functions to be used within component ***************/
 

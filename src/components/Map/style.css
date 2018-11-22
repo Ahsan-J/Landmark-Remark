@@ -1,0 +1,29 @@
+.add-note {
+  font-size: 18px;
+  padding:5px 0px;
+}
+
+.add-note:hover {
+  cursor: pointer;
+}
+
+.card-body{
+  padding: 0.5rem;
+}
+
+.note-text-wrapper {
+  clear: both;
+}
+
+.note-text { 
+  /* font-size: 14px; */
+  padding:5px 0;
+  text-align: left;
+}
+
+.cardWrapper {
+  position: fixed;
+  left : 0;
+  top :0;
+  background-color: transparent
+}

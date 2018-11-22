@@ -4,20 +4,15 @@ import Routes from './router/router.js';
 import appStore from './redux/store.js'
 import { Provider } from 'react-redux'
 import * as serviceWorker from './serviceWorker';
-
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Routes />
     )
   }
 }
-
 
 ReactDOM.render(
   <Provider store={appStore}>
