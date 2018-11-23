@@ -12,11 +12,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
@@ -27,18 +22,33 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## About the Project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Brief requirement detail
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The Application `Landmark Remark` is a simple single page application in which a user can view and add the Markers over Google map with a **Note**. Following are the basic functionalities this application can cover:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+ - A user can save these notes (single note over a single marker) and let the other users of the application see this marker with his written note on it. 
+ - A user's Marker is protected over the Application, Means only the user that wrote that note can change or delete that note. 
+ - A user can also search for the notes written by his or other users over the application and access its note and address.
+ - By default a marker is shown which only stays there to show the user his/her location.
+ - Each marker can be identified uniquely on the basis of user name, location and note.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Libraries used
 
-## Learn More
+- [react-google-maps](https://github.com/tomchentw/react-google-maps/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### How much time is consumed
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The Application uses the Google map API to render the map, which before developing the project I had no such experience for using the Google map using the API instead of integrating through iframes. Exploring the best possible ways to handle the requirement took a lot of time. Thanks to `react-google-maps` easy integration which made it possible to easily achivce the basic requirements of the application.
+- Architecture Setup (2.5 h from sratch)
+- Research and map implementation (4h)
+- Achiving the requirements (4.5h)
+
+### Issues or Limitation
+
+Throughout the development process the application is limited to the following known issues.
+
+- A user name is saved on the browser instead of a proper server which has a limitiation of 1 user per browser (instead if he opens in Incognito\Private mode of the browser)
+- Google map API key is limited to the usage for Development purpose only. 
+- A user location could marker is the same as the other markers but with a title of "My Location" on it.

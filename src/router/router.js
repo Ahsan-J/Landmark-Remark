@@ -7,9 +7,6 @@ import {
 } from 'react-router-dom';
 
 class Routes extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <Router>
