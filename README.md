@@ -37,6 +37,9 @@ The Application `Landmark Remark` is a simple single page application in which a
 ### Libraries used
 
 - [react-google-maps](https://github.com/tomchentw/react-google-maps/)
+- Firebase 
+
+Project is hosted at https://tcig-landmarkremark.firebaseapp.com
 
 ### How much time is consumed
 

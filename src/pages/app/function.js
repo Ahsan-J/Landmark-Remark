@@ -39,7 +39,7 @@ export default {
   },
   
   componentDidMount: function () {
-    
+    this.fetchMarkersFromFirebase();
   },
   /***********************Additonal Functions to be used within component ***************/
 

@@ -35,8 +35,6 @@ class App extends Component {
     // External Functions
     this.fetchMarkersFromFirebase = fetchMarkersFromFirebase.bind(this);
     this.addMarkersToFirebase = addMarkersToFirebase.bind(this);
-    // Calling functions
-    this.fetchMarkersFromFirebase();
   }
   render() {
     return (
